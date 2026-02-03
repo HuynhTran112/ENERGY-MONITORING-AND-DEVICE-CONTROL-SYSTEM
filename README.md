@@ -45,7 +45,7 @@ The system uses the following data structure in Firebase Realtime Database:
 ```
 
 ## Hardware Connections
-
+### DC Connections
 | Component | Pin Name | ESP32 GPIO | Notes |
 | :--- | :--- | :--- | :--- |
 | **OLED Display** | SDA | **GPIO 21** | I2C Data |
@@ -63,6 +63,18 @@ The system uses the following data structure in Firebase Realtime Database:
 | | Relay 2 | **GPIO 27** | Active High |  
 - The ADC samples the ACS712 and ZMPT101B AC signals biased at Vin/2.
 - ADC operates at 3.3V, so the ACS712 and ZMPT101B **Vcc** must be scaled down to 3.3V.
+
+### AC Connections (220V)
+| Component        | Pin Name | Connected To        | Notes |
+|------------------|---------------|---------------------|-------|
+| Relay            | COM           | L (AC Source)       | AC input to relay |
+| Relay            | NO            | IN+ (ACS712)        | Power delivered when relay is ON |
+| ACS712           | IN+           | NO (Relay)          | Current sensing input |
+| ACS712           | IN−           | L (Load / Device)   | Current output to load |
+| ZMPT101B         | L             | L (Load / Device)   | AC voltage sensing (Live) |
+| ZMPT101B         | N             | N (Load / Device)   | AC voltage sensing (Neutral) |
+| Load / Device    | L             | ACS712 IN−          | Live wire to load |
+| Load / Device    | N             | N (AC Source)       | Neutral wire to load |
 
 ## How to Use
 ### Before flashing, you must configure your network and Firebase credentials.
@@ -92,6 +104,10 @@ The system uses the following data structure in Firebase Realtime Database:
       ```bash
       idf.py -p COM3 flash monitor
       ```
+## Functional Diagram
+<p align="center">
+  <img src="https://github.com/Ssweeties/ENERGY-MONITORING-AND-DEVICE-CONTROL-SYSTEM/blob/d3222e08c455b0b7b3be6c2ac91a05b1994e28e5/img/Diagram.png?raw=true" alt="Diagram" width="47%">
+</p>
 
 ## System Behavior & Workflow
 1. **Startup**: The OLED displays "CONNECT WIFI..." to require the user to connect to Wi-Fi. Once Wi-Fi is connected, the sensors and Firebase will be initialized.
@@ -113,10 +129,6 @@ The system uses the following data structure in Firebase Realtime Database:
    - Once the logout flag is set, the system will stop measuring power.
    - The relay will be turned off and deactivated.
    - The last energy data will be stored on Firebase so it can be retrieved in the next session when the user logs in again.
-## Functional Diagram
-<p align="center">
-  <img src="https://github.com/Ssweeties/ENERGY-MONITORING-AND-DEVICE-CONTROL-SYSTEM/blob/d3222e08c455b0b7b3be6c2ac91a05b1994e28e5/img/Diagram.png?raw=true" alt="Diagram" width="47%">
-</p>
 
 ## PCB Power Preview
 <p align="center">
