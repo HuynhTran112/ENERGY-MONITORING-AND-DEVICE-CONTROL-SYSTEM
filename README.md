@@ -140,6 +140,7 @@ The system uses the following data structure in Firebase Realtime Database:
 </p>
 
 ## Video Demo
+[![Watch the video](https://github.com/HuynhTran112/ENERGY-MONITORING-AND-DEVICE-CONTROL-SYSTEM/blob/3bb76fe0bae109afbbdac89cf11b092103faa804/img/Video_demo.jpg)](https://www.youtube.com/watch?v=Ac7c-aw6XPc)
 
 ## System Protection
 *   **Wi-Fi Lost** → Auto-reconnect starts.
