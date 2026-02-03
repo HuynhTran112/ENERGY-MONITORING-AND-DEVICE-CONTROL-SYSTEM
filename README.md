@@ -129,9 +129,9 @@ The system uses the following data structure in Firebase Realtime Database:
 
 ## OLED Preview
 <p align="center">
-  <img src="https://github.com/HuynhTran112/ENERGY-MONITORING-AND-DEVICE-CONTROL-SYSTEM/blob/29103ec09348fb9e339f40a1d265bb042613c6cc/img/OLED_1.jpg?raw=true" width="37%">
-  <img src="https://github.com/HuynhTran112/ENERGY-MONITORING-AND-DEVICE-CONTROL-SYSTEM/blob/29103ec09348fb9e339f40a1d265bb042613c6cc/img/OLED_2.jpg?raw=true" width="46%">
-  <img src="https://github.com/HuynhTran112/ENERGY-MONITORING-AND-DEVICE-CONTROL-SYSTEM/blob/29103ec09348fb9e339f40a1d265bb042613c6cc/img/OLED_3.jpg?raw=true" width="46%">
+  <img src="https://github.com/HuynhTran112/ENERGY-MONITORING-AND-DEVICE-CONTROL-SYSTEM/blob/29103ec09348fb9e339f40a1d265bb042613c6cc/img/OLED_1.jpg?raw=true" width="30%">
+  <img src="https://github.com/HuynhTran112/ENERGY-MONITORING-AND-DEVICE-CONTROL-SYSTEM/blob/29103ec09348fb9e339f40a1d265bb042613c6cc/img/OLED_2.jpg?raw=true" width="30%">
+  <img src="https://github.com/HuynhTran112/ENERGY-MONITORING-AND-DEVICE-CONTROL-SYSTEM/blob/29103ec09348fb9e339f40a1d265bb042613c6cc/img/OLED_3.jpg?raw=true" width="30%">
 </p>
 
 ## Product Preview  
@@ -139,7 +139,7 @@ The system uses the following data structure in Firebase Realtime Database:
   <img src="https://github.com/Ssweeties/ENERGY-MONITORING-AND-DEVICE-CONTROL-SYSTEM/blob/1511bfd2bb4d7e161b8767a6d5d58ec49d36c787/img/Product.jpg?raw=true" alt="Diagram" width="46%">
 </p>
 
-## Video Demp
+## Video Demo
 
 ## System Protection
 *   **Wi-Fi Lost** → Auto-reconnect starts.
