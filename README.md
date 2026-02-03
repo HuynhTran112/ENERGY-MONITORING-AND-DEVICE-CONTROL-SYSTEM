@@ -1,6 +1,6 @@
 # Energy Monitoring & Device Control System (ESP32 + Firebase + App)
 
-##Project Title
+## Project Title
 **IoT-Based Energy Monitoring and Device Control System Using ESP32, ACS712, ZMPT101B, OLED, RFID, RELAY**
 
 ## Description
