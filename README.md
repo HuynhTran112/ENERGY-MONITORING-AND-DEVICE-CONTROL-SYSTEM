@@ -48,7 +48,7 @@ The system uses the following data structure in Firebase Realtime Database:
 ### DC Connections
 | Component | Pin Name | ESP32 GPIO | Notes |
 | :--- | :--- | :--- | :--- |
-| OLED Display | SDA | GPIO 21 | I2C Data |
+| OLED | SDA | GPIO 21 | I2C Data |
 | | SCL | GPIO 22 | I2C Clock |
 | RFID (RC522) | SDA (SS) | GPIO 5 | SPI Chip Select |
 | | SCK | GPIO 18 | SPI Clock |
@@ -68,13 +68,13 @@ The system uses the following data structure in Firebase Realtime Database:
 | Component        | Pin Name | Connected To        | Notes |
 |------------------|---------------|---------------------|-------|
 | Relay            | COM           | L (AC Source)       | AC input to relay |
-| Relay            | NO            | IN+ (ACS712)        | Power delivered when relay is ON |
+|            | NO            | IN+ (ACS712)        | Power delivered when relay is ON |
 | ACS712           | IN+           | NO (Relay)          | Current sensing input |
-| ACS712           | IN−           | L (Load / Device)   | Current output to load |
+|         | IN−           | L (Load / Device)   | Current output to load |
 | ZMPT101B         | L             | L (Load / Device)   | AC voltage sensing (Live) |
-| ZMPT101B         | N             | N (Load / Device)   | AC voltage sensing (Neutral) |
+|       | N             | N (Load / Device)   | AC voltage sensing (Neutral) |
 | Load / Device    | L             | ACS712 IN−          | Live wire to load |
-| Load / Device    | N             | N (AC Source)       | Neutral wire to load |
+|   | N             | N (AC Source)       | Neutral wire to load |
 
 ## How to Use
 ### Before flashing, you must configure your network and Firebase credentials.
