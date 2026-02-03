@@ -48,19 +48,19 @@ The system uses the following data structure in Firebase Realtime Database:
 ### DC Connections
 | Component | Pin Name | ESP32 GPIO | Notes |
 | :--- | :--- | :--- | :--- |
-| **OLED Display** | SDA | **GPIO 21** | I2C Data |
-| | SCL | **GPIO 22** | I2C Clock |
-| **RFID (RC522)** | SDA (SS) | **GPIO 5** | SPI Chip Select |
-| | SCK | **GPIO 18** | SPI Clock |
-| | MISO | **GPIO 19** | SPI MISO |
-| | MOSI | **GPIO 23** | SPI MOSI |
-| | RST | **GPIO 4** | Reset |
-| **Sensors** | ACS712 (Dev 1) | **GPIO 34** | Analog Input (ADC1_6) |
-| | ZMPT101B (Dev 1)| **GPIO 35** | Analog Input (ADC1_7) |
-| | ACS712 (Dev 2) | **GPIO 32** | Analog Input (ADC1_4) |
-| | ZMPT101B (Dev 2)| **GPIO 33** | Analog Input (ADC1_5) |
-| **Controls** | Relay 1 | **GPIO 14** | Active High |
-| | Relay 2 | **GPIO 27** | Active High |  
+| OLED Display | SDA | GPIO 21 | I2C Data |
+| | SCL | GPIO 22 | I2C Clock |
+| RFID (RC522) | SDA (SS) | GPIO 5 | SPI Chip Select |
+| | SCK | GPIO 18 | SPI Clock |
+| | MISO | GPIO 19 | SPI MISO |
+| | MOSI | GPIO 23 | SPI MOSI |
+| | RST | GPIO 4 | Reset |
+| Sensors | ACS712 (Dev 1) | GPIO 34 | Analog Input (ADC1_6) |
+| | ZMPT101B (Dev 1)| GPIO 35 | Analog Input (ADC1_7) |
+| | ACS712 (Dev 2) | GPIO 32 | Analog Input (ADC1_4) |
+| | ZMPT101B (Dev 2)| GPIO 33 | Analog Input (ADC1_5) |
+| Controls | Relay 1 | GPIO 14 | Active High |
+| | Relay 2 | GPIO 27 | Active High |  
 - The ADC samples the ACS712 and ZMPT101B AC signals biased at Vin/2.
 - ADC operates at 3.3V, so the ACS712 and ZMPT101B **Vcc** must be scaled down to 3.3V.
 
